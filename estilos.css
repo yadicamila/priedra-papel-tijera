@@ -1,0 +1,120 @@
+:root {
+    /* Colores base */
+    --color-bg-dark: #121212;        /* Fondo principal oscuro */
+    --color-bg-light: #1e1e1e;       /* Fondo para secciones y contenedores */
+    --color-text-primary: #e0e0e0;   /* Texto principal en un gris claro */
+    --color-text-secondary: #b3b3b3; /* Texto secundario en un gris más suave */
+
+    /* Tonos morados */
+    --color-primary: #7e57c2;        /* Morado principal para acentos */
+    --color-primary-dark: #5e35b1;   /* Morado más oscuro para contrastes */
+    --color-primary-light: #9575cd;  /* Morado más claro para resaltar elementos */
+
+    /* Colores complementarios */
+    --color-accent: #ff4081;         /* Rosa para acentos llamativos */
+    --color-accent-light: #ff80ab;   /* Rosa claro para toques sutiles */
+    --color-accent-dark: #f50057;    /* Rosa oscuro para detalles importantes */
+
+    /* Colores neutros */
+    --color-border: #424242;         /* Borde gris oscuro para elementos */
+    --color-placeholder: #757575;    /* Color para texto de marcador de posición */
+    --color-overlay: rgba(0, 0, 0, 0.5); /* Superposiciones semi-transparentes */
+}
+
+body {
+    background: var(--color-bg-dark);
+    font-family: monospace;
+    height: 100%;
+} 
+.pagina{
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+.titulo h1{
+    color: #7e57c2;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 40px;
+}
+.contenedor{
+    background: var(--color-bg-light);
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.seccion{
+    width: 50%;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+
+}
+.subtitulo h3 {
+    color: var(--color-primary-dark);
+    font-size: 30px;
+    font-weight: bold;
+}
+.contenedor-opciones{
+    height: auto;
+    background: var(--color-primary-light);
+    margin: 10px;
+    width: 70%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.opcion{
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    background: var(--color-accent-dark);
+}
+.opcion:hover{
+    background: var(--color-accent);
+}
+
+
+.opcion img {
+    width: 80px;
+    height: 80px;
+}
+
+
+.panel-puntuacion{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    color: #f50057;
+    background: var(--color-accent-light);
+    width:200px;
+    height: 100px;
+    border-radius: 10px;
+
+}
+
+
+/* estilos del tooltip */
+   /* Cambiar el tamaño y color del texto del tooltip */
+   .tooltip-inner {
+    background-color: #ff6f61 !important; /* Cambia el color de fondo del tooltip */
+    color: #ffffff !important; /* Cambia el color del texto del tooltip */
+    font-size: 1.25rem !important; /* Aumenta el tamaño del texto */
+    padding: 10px !important; /* Aumenta el padding para hacer el tooltip más grande */
+}
+
+/* Cambiar el color de la flecha del tooltip */
+.tooltip .tooltip-arrow::before {
+    /* border-top-color: #ff6f61 !important; */
+    /* border-bottom-color: #ff6f61 !important; */
+    border-left-color:  #ff6f61 !important;
+    /* border-right-color: #cb2617 !important; */
+}
